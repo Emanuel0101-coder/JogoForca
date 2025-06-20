@@ -4,12 +4,14 @@ public class WordDealer {
 
     String escolherTipoAleatorio() {
         String[][] repertorios = {
-            {"abelha", "abutre", "aguia", "alpaca", "andorinha", "anta", "aranha", "arara",
-             "avestruz","babuino", "bacalhau", "bagre", "baleia", "barata", "barracuda"},
-             
-            {"wesley", "tintomax", "tavares", "andre", "vitor", "corinthians", "aspas", "guaratubaman"},
-             
-            {"banana", "uva", "laranja", "melancia", "pera", "abacaxi", "manga"}
+            {"cachorro", "gato", "elefante", "leao", "tigre","cavalo", "coelho", "girafa", "jacare", "urso",
+            "tartaruga", "golfinho", "aguia", "coruja", "zebra","canguru", "lobo", "rato", "porco", "pinguim", "abelha"},
+
+            {"tintomax", "cinderela", "batman", "chaves", "naruto", "guaratubaman", "goku", "spiderman", "sherlock", "aspas",
+             "thor", "pikachu", "simba", "mickey", "rapunzel", "hulk", "shrek", "moana", "olaf", "sonic"},
+            
+            {"banana", "uva", "laranja", "melancia", "pera", "abacaxi", "manga", "goiaba", "morango", "caju", "amora", 
+            "maracuja", "pitanga", "maca", "kiwi", "limao", "acerola", "jabuticaba", "framboesa", "figo"}
         };
 
         String[] nomesRepertorios = {"Animais", "Especiais", "Frutas"};

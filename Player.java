@@ -2,13 +2,12 @@ import java.util.Scanner;
 
 public class Player {
 
-    String name = "";
+    private String name = "";
+    private final Scanner scan = new Scanner(System.in);
 
-    Scanner scan = new Scanner(System.in);
-    String setName(){
+    public String setName() {
         System.out.println("Qual o seu nome?");
-        name = scan.nextLine();
-
+        name = scan.nextLine().trim();
         return name;
     }
 }

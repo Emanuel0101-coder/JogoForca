@@ -1,0 +1,10 @@
+{
+  "Emanuel": {
+    "nome": "Emanuel",
+    "vitoriasConsecutivas": 2
+  },
+  "pedro": {
+    "nome": "pedro",
+    "vitoriasConsecutivas": 1
+  }
+}

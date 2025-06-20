@@ -5,26 +5,30 @@ public class JogoDaForca {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
-
         Player player = new Player();
+        Ranking ranking = new Ranking();
 
         String playerName = player.setName();
-        System.out.println("Ola, " + playerName + ". Bem vindo(a) ao Jogo da Forca.");
+        System.out.println("Olá, " + playerName + ". Bem-vindo(a) ao Jogo da Forca.");
         System.out.println("Acerte a palavra com menos de 7 erros.");
 
         while (true) {
 
-            WordDealer dealWord = new WordDealer();
+            RankingEntry jogadorRank = ranking.getRanking(playerName);
+            boolean modoDesafio = jogadorRank.modoDesafio();
 
+            WordDealer dealWord = new WordDealer();
             String gameWord = dealWord.escolherTipoAleatorio();
             int wordNumLetters = gameWord.length();
-
             String hiddenWord = dealWord.construirPalavraOculta(gameWord);
 
             letras dealLetter = new letras();
-            dealLetter.guessLetter(gameWord, wordNumLetters, hiddenWord);
+            boolean venceu = dealLetter.guessLetter(gameWord, wordNumLetters, hiddenWord, modoDesafio);
 
             System.out.println("A palavra era: " + gameWord);
+
+            ranking.registrarResultado(playerName, venceu);
+            ranking.mostrarRanking();
 
             String repeticao;
             while (true) {
@@ -33,8 +37,8 @@ public class JogoDaForca {
 
                 if (repeticao.equals("n")) {
                     System.out.println("Obrigado por jogar");
-                    scan.close(); // Fecha o scanner
-                    System.exit(0); // Encerra o programa
+                    scan.close();
+                    System.exit(0);
                 } else if (repeticao.equals("s")) {
                     break;
                 } else {
