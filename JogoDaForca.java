@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class JogoDaForca {
 
     public static void main(String[] args) {
-
+        //java -cp ".;gson-2.10.1.jar" JogoDaForca
         Scanner scan = new Scanner(System.in);
         Player player = new Player();
         Ranking ranking = new Ranking();
@@ -16,12 +16,10 @@ public class JogoDaForca {
 
             RankingEntry jogadorRank = ranking.getRanking(playerName);
             boolean modoDesafio = jogadorRank.modoDesafio();
-
             WordDealer dealWord = new WordDealer();
             String gameWord = dealWord.escolherTipoAleatorio();
             int wordNumLetters = gameWord.length();
             String hiddenWord = dealWord.construirPalavraOculta(gameWord);
-
             letras dealLetter = new letras();
             boolean venceu = dealLetter.guessLetter(gameWord, wordNumLetters, hiddenWord, modoDesafio);
 
@@ -41,7 +39,7 @@ public class JogoDaForca {
                     System.exit(0);
                 } else if (repeticao.equals("s")) {
                     break;
-                } else {
+                } else { 
                     System.out.println("Por favor digite 's' para sim ou 'n' para não.");
                 }
             }

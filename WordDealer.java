@@ -32,7 +32,7 @@ public class WordDealer {
     String construirPalavraOculta(String palavra) {
         StringBuilder palavraOculta = new StringBuilder();
         for (int i = 0; i < palavra.length(); i++) {
-            palavraOculta.append("_");
+            palavraOculta.append(" _ ");
         }
         System.out.println("Palavra: " + palavraOculta);
         return palavraOculta.toString();

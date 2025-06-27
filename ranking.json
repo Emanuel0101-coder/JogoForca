@@ -1,10 +1,38 @@
 {
   "Emanuel": {
     "nome": "Emanuel",
-    "vitoriasConsecutivas": 2
+    "vitoriasConsecutivas": 5
   },
-  "pedro": {
-    "nome": "pedro",
+  "Pedro": {
+    "nome": "Pedro",
+    "vitoriasConsecutivas": 1
+  },
+  "Mateus": {
+    "nome": "Mateus",
+    "vitoriasConsecutivas": 4
+  },
+  "Leonardo": {
+    "nome": "Leonardo",
+    "vitoriasConsecutivas": 3
+  },
+  "A": {
+    "nome": "A",
+    "vitoriasConsecutivas": 1
+  },
+  "emi": {
+    "nome": "emi",
+    "vitoriasConsecutivas": 11
+  },
+  "lelolanches": {
+    "nome": "lelolanches",
+    "vitoriasConsecutivas": 13
+  },
+  "duda": {
+    "nome": "duda",
+    "vitoriasConsecutivas": 17
+  },
+  "Leo": {
+    "nome": "Leo",
     "vitoriasConsecutivas": 1
   }
 }

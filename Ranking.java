@@ -29,7 +29,7 @@ public class Ranking {
     }
 
     public void mostrarRanking() {
-        System.out.println("\n===== RANKING POR VITÓRIAS CONSECUTIVAS =====");
+        System.out.println("\n===== RANKING POR VITORIAS CONSECUTIVAS =====");
         rankingMap.values().stream()
             .sorted((a, b) -> Integer.compare(b.getVitoriasConsecutivas(), a.getVitoriasConsecutivas()))
             .forEach(entry ->
